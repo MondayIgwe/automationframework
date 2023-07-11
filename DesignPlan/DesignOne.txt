@@ -5,3 +5,11 @@ Specifically it can be web, mobile, api or hybrid test automation framework
 Development / Implementation
 Execution
 Maintenance
+
+
+Java technologies dependencies
+====================================
+selenium for web interface actions
+apache poi for test data
+extent report for capturing screenshot reports
+apache commons
