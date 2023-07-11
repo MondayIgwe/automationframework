@@ -1,0 +1,7 @@
+Java based test automation framework
+Specifically it can be web, mobile, api or hybrid test automation framework
+
+=== Phases ====
+Development / Implementation
+Execution
+Maintenance
