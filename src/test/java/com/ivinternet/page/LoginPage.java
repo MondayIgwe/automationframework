@@ -22,11 +22,14 @@ public class LoginPage {
     WebElement username;
     @FindBy(name="password")
     WebElement pass;
-    private @FindBy(name = "btnLogin")
+    @FindBy(name = "btnLogin")
     WebElement loginBtn;
 
+    // hOW - BUSINESS LOGIC - ACTIONS - IMPLEMENTATION - DO IT - PRACTICAL
     public void loginProcess(String user, String passcode){
+        username.click();
         username.sendKeys(user);
+        pass.click();
         pass.sendKeys(passcode);
         loginBtn.click();
     }

@@ -11,5 +11,7 @@ Java technologies dependencies
 ====================================
 selenium for web interface actions
 apache poi for test data
-extent report for capturing screenshot reports
+extent report and listener for capturing screenshot reports
 apache commons
+Apache Log4j jar and log4j properties file for login execution events
+Apache poi for data driven test

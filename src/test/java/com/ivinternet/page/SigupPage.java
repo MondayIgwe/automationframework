@@ -6,9 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import static constants.ICommonData.URL;
-
-
 public class SigupPage {
 
     WebDriver driver;
@@ -28,12 +25,11 @@ public class SigupPage {
     private @FindBy(xpath = "//tr/td[contains(text(),'User ID')]/following-sibling::*") WebElement userId;
     private @FindBy(xpath = "//tr/td[contains(text(),'Password')]/following-sibling::*") WebElement passId;
 
-    public void setEmailid(String email) throws InterruptedException {
+    public void setEmailid(String email, String url) throws InterruptedException {
         emailid.sendKeys(email);
         loginBtn.click();
 
         Thread.sleep(2000);
-        System.out.println(driver.getCurrentUrl());
         Assert.assertEquals(driver.getCurrentUrl(), "https://demo.guru99.com/access.php?uid=mngr514323%20&%20pass=EgUhyhU%20&%20email=sam@gmail.com");
 
 
@@ -47,7 +43,7 @@ public class SigupPage {
         }
 
         // navigate to login page
-        driver.get(URL + "v4");
+        driver.get(url + "v4");
         Thread.sleep(5000);
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://demo.guru99.com/v4/");

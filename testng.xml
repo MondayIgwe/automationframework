@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--Before Test section-->
+    <listeners>
+        <listener class-name="com.ivinternet.report.Reporting"/>
+    </listeners>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://demo.guru99.com/"/>
+
+    <!--Test section-->
+    <test verbose="2" preserve-order="true" name="C:/Users/migwe/Desktop/AutomationFramework">
+        <classes>
+            <class name="com.ivinternet.testCases.LoginTest"/>
+        </classes>
+    </test>
+</suite>
